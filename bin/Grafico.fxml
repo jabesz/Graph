@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphicController">
+   <children>
+      <PieChart fx:id="chartPie" prefHeight="431.0" prefWidth="487.0" />
+      <Button fx:id="btnAdd" layoutX="502.0" layoutY="118.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Label layoutX="502.0" layoutY="5.0" text="Product Name" />
+      <Label layoutX="502.0" layoutY="57.0" text="Sales" />
+      <TextField fx:id="txtProdName" layoutX="502.0" layoutY="26.0" prefHeight="26.0" prefWidth="232.0" />
+      <TextField fx:id="txtSales" layoutX="502.0" layoutY="79.0" />
+      <ScrollPane layoutX="502.0" layoutY="195.0" prefHeight="221.0" prefWidth="232.0">
+         <content>
+            <TextArea fx:id="txtChartDataDisplay" prefHeight="222.0" prefWidth="232.0" />
+         </content>
+      </ScrollPane>
+    <AnchorPane layoutX="174.0" layoutY="-25.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="500.0" layoutY="166.0" text="Chart Data" />
+      <Button fx:id="BtnAddPdf" layoutX="566.0" layoutY="118.0" mnemonicParsing="false" onAction="#addPdf" text="PDF" />
+   </children>
+</AnchorPane>
